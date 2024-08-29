@@ -7,22 +7,19 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { WheaterHomeComponent } from './modules/wheater/page/wheater-home/wheater-home.component';
+import { WeatherHomeComponent } from './modules/wheater/page/weather-home/weather-home.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    WheaterHomeComponent
-  ],
+  declarations: [AppComponent, WeatherHomeComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
     FormsModule,
-    FontAwesomeModule
+    FontAwesomeModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
